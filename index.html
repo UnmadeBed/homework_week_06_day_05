@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <fieldset>
+        <legend>To-do List:</legend>
+        <div class="form-item">
+          <label for="task" class="primary">Task</label>
+          <input type="text" name="task" placeholder="Reminder/task etc." required/><br>
+          <label for="deadline" class="primary">Deadline:</label>
+          <input type="text" name="deadline" placeholder="Enter day" required/><br>
+          <label for="owner" class="primary">Owner:</label>
+          <input type="text" name="owner" placeholder="Enter name" required/><br>
+
+          <input type="radio" id="no-rush" name="importance" value="no-rush">
+          <label for="no-rush">No rush</label><br>
+          <input type="radio" id="important" name="importance" value="important">
+          <label for="important">Important</label><br>
+          <input type="radio" id="do-it-yesterday" name="importance" value="do-it-yesterday">
+          <label for="do-it-yest">Do it yesterday!!!</label>
+        </div>
+        <input type="submit" value="save"/>
+      </fieldset>
+    </form>
+
+    <button id="delete-all">Delete All</button>
+
+    <h1>To-do List</h1>
+    <ul id="to-do-list"></ul>
+
+  </body>
+</html>
+
+
+
+
+<!-- RADIO BUTTON EXAMPLE -->
+<!-- <form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+</form> -->
+
+<!-- GROUPING DATA VISUALLY
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form> -->
